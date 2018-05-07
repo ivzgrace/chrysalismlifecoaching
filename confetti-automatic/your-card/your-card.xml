@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+||| Instructions Christmas Card |||
+
+TEXT MAIN
+You enter the main text, such as "Merry Christmas" in <main> and </main>.
+
+MESSAGE
+If you want to override the message, just type what you want and between <your_message> and </your_message>. Just press enter to give a line break. If the text was very up, press "enter" to get the text further down.
+
+SITE
+Enter the company's website between <your_site> and </your_site> and do not put "http://" because it gets ugly. Example: yourcompany.com
+
+URL
+Address of the site between <your_url> and </your_url>. In this field you put "http://", and can even change the url. Example: http://www.yourcompany.com/contact.html
+
+LOGO
+Paste the logo you want to use in the folder "your_card", and enter the file name and between <your_logo> and </your_logo>. Example: logo_yourcompany.png
+
+FONT
+Visit the Google fonts (https://www.google.com/fonts) and choose the font you see fit! Be careful when filling in the fields below. Check the help instructions.
+
+SIZE
+The text was too big or small? Change the text size in the size field!
+
+COLOR
+If you want to change the text color, you have to fill the fields with the color red, green and blue colors. In Photoshop you can see these colors.
+
+-->
+
+<your_card>
+
+<your_main>
+Happy Holidays!</your_main>
+
+<your_message>
+JOY IS THE GREATEST GIFT A PERSON CAN GIVE.
+MAY THIS CHRISTMAS
+BRING YOU MUCH HAPPINESS
+FOR ALL DAYS OF THE NEW YEAR.
+</your_message>
+    
+<your_site>yourcompany.com</your_site>
+    
+<your_url>https://keiow.com/</your_url>
+
+<your_logo>merry-christmas.png</your_logo>
+
+<!--
+||| CHANGE ADVANCED ||| 
+Changes in text size, color and font. Follow the instructions to help. -->
+
+<!-- MAIN -->
+
+<main_font>Niconne</main_font>
+
+<main_font_url>https://fonts.googleapis.com/css?family=Niconne</main_font_url>
+
+<main_size>50</main_size>
+
+<main_color_red>255</main_color_red>
+
+<main_color_green>255</main_color_green>
+
+<main_color_blue>255</main_color_blue>
+
+<!-- MESSAGE -->
+
+<message_font>Comfortaa</message_font>
+
+<message_font_url>https://fonts.googleapis.com/css?family=Comfortaa</message_font_url>
+
+<message_size>16</message_size>
+
+<message_color_red>255</message_color_red>
+
+<message_color_green>187</message_color_green>
+
+<message_color_blue>8</message_color_blue>
+
+<!-- URL -->
+
+<site_font>Comfortaa</site_font>
+
+<site_font_url>https://fonts.googleapis.com/css?family=Comfortaa</site_font_url>
+
+<site_size>16</site_size>
+
+<site_color_red>153</site_color_red>
+
+<site_color_green>153</site_color_green>
+
+<site_color_blue>153</site_color_blue>
+
+<!-- ADVANCED -->
+
+<automatic>yes</automatic>
+<!--If you want the card to open yourself, put "yes" (all text tiny). -->
+
+</your_card>

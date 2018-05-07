@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include"/_System/Includes/head.inc" %}
+</head>
+
+<body>
+<!--	START HEADER 	--> 
+{module_contentholder, name="Preloader"} 
+{module_contentholder, name="_Template - Header"}
+ 
+    
+    <section class="innerpage-banner-beach">
+    <div class="container">
+        <div class="row">
+            <div class="large-12 medium-12 small-12 columns">
+                <h1>One Day or Day One - It's Your Choice.</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--	 END HEADER 	--> 
+<!--	START MIDDLE 	-->
+    <section class="innerpage-content">
+    <div class="container">
+        <div class="row">
+            <div class="medium-12 columns text-center">
+                <h1>{module_pagename}</h1>
+            </div>
+        </div>
+        <div class="row">
+            {tag_pagecontent}
+           
+        </div>
+    </div>
+</section>
+    
+    
+    <section class="testimonial-wrapper">
+    <div class="row">
+        <div class="main-content">
+            <div class="medium-5 small-12 columns testimonial">
+                <h2 class="sub-title">Customers Stories</h2>
+                <ul>
+                    {module_webapps id="Testimonials" filter="all"}
+                </ul>
+            </div>
+            <div class="medium-7 small-12 columns">
+                <figure><img src="_assets/img/photo-line.png">
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <div class="space"></div><div class="space"></div><div class="space"></div>
+<p>Countdown here</p>
+<div class="space"></div><div class="space"></div><div class="space"></div>
+
+   
+
+<!--	END MIDDLE 	--> 
+    {module_contentholder name="WOW Email Sign Up"}
+<!--	START FOOTER 	--> 
+{module_contentholder, name="_Footer"} 
+<!--	 END FOOTER 	--> 
+<!-- include scripts --> 
+{% include"/_System/Includes/scripts.inc" %}
+</body>
+</html>

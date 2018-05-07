@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        {% include"/_System/Includes/head.inc" %}
+        <link rel="stylesheet" type="text/css" href="/_assets/css/secure.css" />
+        <script src="/_assets/js/jquery.cookie.js"></script>
+        <!--	START HEADER 	-->
+        {module_contentholder, name="Preloader"}
+        {module_contentholder name="_Template - Secure Landing Header"}
+        <!--	START MIDDLE 	-->
+        <section class="employment-wrapper innerpage-content">
+        <div class="row">
+        <div class="medium-12 columns text-center">
+        <div class="text-right">{module_goback, Go Back}</div>
+        </div>
+        </div>
+        {tag_pagecontent}
+        </section>
+        <!--	START MIDDLE 	-->
+        <!--	START FOOTER 	-->
+        {module_contentholder, name="_Footer"}
+        <!--	 END FOOTER 	-->
+        <!-- include scripts -->
+        {% include"/_System/Includes/scripts.inc" %}
+        <script>
+jQuery(document).ready(function(){
+    jQuery("#markcomplete").click(function(){
+    	//jQuery("form#markcompleteform").submit();
+        jQuery(this).hide();
+        window.location.href = "/congrats";
+    });
+
+ 
+    $('span.mcomplete').on('click', function() {
+        if (!$(this).hasClass("mclicked")) {
+          $(this).addClass('mclicked');
+          var clicked = $('.mcomplete.mclicked').map(function() {
+                return '#' + this.id;
+          }).get().join(',');
+          $.cookie('MyCookie', clicked);
+          window.location.href = "/congrats";
+        }else{
+            $(this).removeClass('mclicked');
+            $.removeCookie('MyCookie');
+        }
+    });
+    var MyCookie = $.cookie('MyCookie');
+    $(MyCookie).addClass('mclicked');
+});
+</script>
+    </body>
+</html>

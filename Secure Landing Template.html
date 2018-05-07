@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include"/_System/Includes/head.inc" %}
+</head>
+<body>
+<!--	START HEADER 	--> 
+{module_contentholder, name="Preloader"} 
+{module_contentholder, name="_Template - Header"}
+
+<!--	START MIDDLE 	-->
+<section class="employment-wrapper innerpage-content">
+  <div class="row">
+    <div class="medium-12 columns text-center">
+        <h1>Welcome!</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-9 small-12 columns"> {tag_pagecontent} </div>
+    <div class="medium-3 small-12 columns"> {module_contentholder name="Account - Sidebar Panel"} </div>
+  </div>
+</section>
+<!--	START MIDDLE 	--> 
+
+<!--	START FOOTER 	--> 
+{module_contentholder, name="_Footer"} 
+<!--	 END FOOTER 	--> 
+<!-- include scripts --> 
+{% include"/_System/Includes/scripts.inc" %}
+</body>
+</html>
